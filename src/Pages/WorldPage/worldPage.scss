@@ -1,0 +1,34 @@
+@import "../../styles/partials/resets";
+@import "../../styles/partials/variables";
+@import "../../styles/partials/breakpoints";
+@import "../../styles/partials/fonts";
+
+.worldPage{
+    margin-top: 30px;
+    padding: 24px;
+    &__form{
+        margin-bottom: 16px;
+        display: flex;
+        justify-content: space-between;
+        vertical-align: baseline;
+        @include mobile{
+            justify-content:center;
+        }
+        &--search{
+            padding: 6px 10px;
+            outline: none;
+            border: 2px solid gray;
+            border-radius: 12px;           
+        }
+    }
+    &__switch{
+        margin-top: 8px;
+        @include mobile{
+            display: none;
+        }
+    }
+}
+
+.custom-control-label::before{
+    cursor: pointer;
+}
