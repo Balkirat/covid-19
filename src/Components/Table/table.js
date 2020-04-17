@@ -23,6 +23,7 @@ const Table = (props) => {
                 <th className="table__head--row">New Cases</th>
                 <th className="table__head--row">New Deaths</th>
                 <th className="table__head--row">Total Recovered</th>
+                <th className="table__head--row">Critical Cases</th>
               </tr>
             </thead>
             <tbody>
@@ -64,6 +65,14 @@ const Table = (props) => {
                   <CountUp
                     start={0}
                     end={props.worldData.recovered}
+                    duration={5}
+                    separator=","
+                  />
+                </td>
+                <td>
+                  <CountUp
+                    start={0}
+                    end={props.worldData.critical}
                     duration={5}
                     separator=","
                   />
@@ -110,6 +119,14 @@ const Table = (props) => {
                         <CountUp
                           start={0}
                           end={data.recovered}
+                          duration={5}
+                          separator=","
+                        />
+                      </td>
+                      <td>
+                        <CountUp
+                          start={0}
+                          end={data.critical}
                           duration={5}
                           separator=","
                         />
