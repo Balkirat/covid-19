@@ -42,7 +42,7 @@ class WorldPage extends Component {
     console.log("IN World Page");
     let newData = this.state.data.filter((data) => {
       return e.target.value !== ""
-        ? data.country.includes(e.target.value)
+        ? data.country.toLowerCase().includes(e.target.value.toLowerCase())
         : data;
     });
     console.log(newData);
