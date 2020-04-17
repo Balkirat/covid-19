@@ -164,6 +164,13 @@ const Table = (props) => {
                       <h5>
                         Cases Per Million <span>{data.casesPerOneMillion}</span>
                       </h5>
+                      <h5>
+                        Test's per 1 Million{" "}
+                        <span>{data.testsPerOneMillion}</span>
+                      </h5>
+                      <h5>
+                        Total Tests <span>{data.tests}</span>
+                      </h5>
                     </div>
                   </div>
                 </div>
