@@ -22,9 +22,9 @@ class Header extends Component {
                   </Nav>
                 </Link>
                 <Link style={{ textDecoration: "none" }} to="/canada">
-                <Nav className="header__link--color">
+                {/* <Nav className="header__link--color">
                   Canada
-                </Nav>
+                </Nav> */}
                 </Link>
               </Nav>
             </div>
